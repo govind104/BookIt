@@ -13,5 +13,5 @@ Welcome to the Bookie repository! This project aims to revolutionize the way peo
 ## Getting Started
 - Clone the repository.
 - Install the required dependencies.
-- Run Bookie.py using Streamlit to start the application. (or visit https://bookie.streamlit.app/)
+- Run Bookie.py using Streamlit to start the application.
 - Explore the features and functionalities to experience the prototype.
