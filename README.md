@@ -3,10 +3,10 @@ Welcome to the Bookie repository! This project aims to revolutionize the way peo
 
 ## Repository Structure
 - Prototype: Files for the Streamlit-based prototype.
-  - Bookie.py: Main code file for the Streamlit application,
+  - Bookie.py - Main code file for the Streamlit application,
   - Books.csv, Ratings.xlsx, Users.csv - Datasets used to build the protype.
 - Market Analysis: Files for the analysis of the book lending market.
-  - TimeSeriesForecasting: Main code file for the financial modelling,
+  - TimeSeriesForecasting - Main code file for the financial modelling,
   - LeedsLending.csv - Dataset used for the modelling.
 - README.md: Well, you're reading it, aren't you?
 
