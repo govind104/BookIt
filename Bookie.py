@@ -115,6 +115,7 @@ with hometab:
                 st.write(f"**Title:** {row['Title']}")
                 st.write(f"**Author:** {row['Author']}")
                 st.write(f"**Category:** {row['Category']}")
+                st.write(f"**Rating:** {row['Rating']}")
                 st.markdown("***")
         
         if st.button("Refresh"):
