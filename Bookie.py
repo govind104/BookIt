@@ -109,7 +109,7 @@ with hometab:
         st.header("Recommended Books for You")
         num_columns = 4
         columns = st.columns(num_columns)
-        for i, (_, row) in enumerate(recommendations.iterrows()):
+        for i, (_, row) in enumerate(recommendations.sort_values('Rating', ascending = False).iterrows()):
             col = columns[i % num_columns]
             with col:
                 st.write(f"**Title:** {row['Title']}")
@@ -127,7 +127,7 @@ with searchtab:
 
     if search_query:
         # Filter books based on the search query
-        search_results = books[books['Title'].str.contains(search_query, na = False)]
+        search_results = books[books['Title'].str.contains(search_query, na = False)].sort_values('Rating', ascending = False)
 
         # Create a list of search result titles
         search_titles = search_results['Title'].tolist()
@@ -151,4 +151,4 @@ with searchtab:
         else:
             st.write("No results to display.")
     else:
-        st.dataframe(books.set_index('Title').iloc[:, 1:], use_container_width = True, height = int(35.62*len(books)))
+        st.dataframe(books.sort_values('Rating', ascending = False).set_index('Title').iloc[:, 1:], use_container_width = True, height = int(35.62*len(books)))
