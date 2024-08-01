@@ -11,17 +11,17 @@ st.header('Bookie: Book Rentals Made Easy!')
 hometab, searchtab = st.tabs(['Home', 'Search'])
 
 # Load the books data
-books = pd.read_csv("./Prototype/Books.csv", encoding = 'latin-1')
+books = pd.read_csv("Prototype/Books.csv", encoding = 'latin-1')
 
 # Load the ratings data
-ratings = pd.read_excel("./Prototype/Ratings.xlsx")
+ratings = pd.read_excel("Prototype/Ratings.xlsx")
 
 # Calculating the average rating of each book
 books = pd.merge(books, pd.DataFrame(ratings.groupby('BID').mean()['Rating'], columns = ['Rating']), on = 'BID') 
 books['Rating'] = books['Rating'].apply(lambda x: round(x, 1))
 
 # Load the users data
-users = pd.read_csv("./Prototype/Users.csv")
+users = pd.read_csv("Prototype/Users.csv")
 
 def collaborative_filtering(ratings, user_preferences, books, num_recommendations = 10):
     reader = Reader(rating_scale=(1, 5))
