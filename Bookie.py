@@ -6,7 +6,7 @@ from surprise import Dataset, Reader, SVD
 from surprise.model_selection import train_test_split
 from sklearn.metrics.pairwise import cosine_similarity
 
-st.header('BookIt: Book Rentals Made Easy!')
+st.header('Bookie: Book Rentals Made Easy!')
 
 hometab, searchtab = st.tabs(['Home', 'Search'])
 
