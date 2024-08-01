@@ -1,7 +1,7 @@
-## Bookie: Simplifying Book Borrowing through Doorstep Delivery
+# Bookie: Simplifying Book Borrowing through Doorstep Delivery
 Welcome to the Bookie repository! This project aims to revolutionize the way people borrow books from local libraries by offering a convenient doorstep delivery service. This repository includes the complete code for the final product prototype built with Streamlit, the financial modeling, and the required datasets.
 
-# Repository Structure
+## Repository Structure
 - Prototype: Files for the Streamlit-based prototype.
   - Bookie.py: Main code file for the Streamlit application,
   - Books.csv, Ratings.xlsx, Users.csv - Datasets used to build the protype.
@@ -10,7 +10,7 @@ Welcome to the Bookie repository! This project aims to revolutionize the way peo
   - LeedsLending.csv - Dataset used for the modelling.
 - README.md: Well, you're reading it, aren't you?
 
-# Getting Started
+## Getting Started
 - Clone the repository.
 - Install the required dependencies.
 - Run Bookie.py using Streamlit to start the application. (or visit https://bookie.streamlit.app/)
